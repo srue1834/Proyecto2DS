@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='submission (tableau)' inline='true' name='federated.0f5e6e20arcid21h6vby002woyio' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau' name='excel-direct.0z0e6781qdelg7172v5dd1xa8wh5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Oscar/Desktop/Data Science/proyectoDDDD/Predicting-Effective-Arguments-main/Predicting-Effective-Arguments-main/tableau.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0z0e6781qdelg7172v5dd1xa8wh5' name='submission' table='[submission$]' type='table'>
+          <columns gridOrigin='A1:D11:no:A1:D11:0' header='yes' outcome='2'>
+            <column datatype='string' name='discourse_id' ordinal='0' />
+            <column datatype='real' name='Ineffective' ordinal='1' />
+            <column datatype='real' name='Adequate' ordinal='2' />
+            <column datatype='real' name='Effective' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0z0e6781qdelg7172v5dd1xa8wh5' name='submission' table='[submission$]' type='table'>
+          <columns gridOrigin='A1:D11:no:A1:D11:0' header='yes' outcome='2'>
+            <column datatype='string' name='discourse_id' ordinal='0' />
+            <column datatype='real' name='Ineffective' ordinal='1' />
+            <column datatype='real' name='Adequate' ordinal='2' />
+            <column datatype='real' name='Effective' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[submission]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D11:no:A1:D11:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discourse_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[discourse_id]</local-name>
+            <parent-name>[submission]</parent-name>
+            <remote-alias>discourse_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[submission_B8EEC6111C314675ADD0907583448929]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ineffective</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ineffective]</local-name>
+            <parent-name>[submission]</parent-name>
+            <remote-alias>Ineffective</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[submission_B8EEC6111C314675ADD0907583448929]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adequate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Adequate]</local-name>
+            <parent-name>[submission]</parent-name>
+            <remote-alias>Adequate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[submission_B8EEC6111C314675ADD0907583448929]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effective</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Effective]</local-name>
+            <parent-name>[submission]</parent-name>
+            <remote-alias>Effective</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[submission_B8EEC6111C314675ADD0907583448929]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='submission' datatype='table' name='[__tableau_internal_object_id__].[submission_B8EEC6111C314675ADD0907583448929]' role='measure' type='quantitative' />
+      <column caption='Discourse Id' datatype='string' name='[discourse_id]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Guatemala&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='submission' id='submission_B8EEC6111C314675ADD0907583448929'>
+            <properties context=''>
+              <relation connection='excel-direct.0z0e6781qdelg7172v5dd1xa8wh5' name='submission' table='[submission$]' type='table'>
+                <columns gridOrigin='A1:D11:no:A1:D11:0' header='yes' outcome='2'>
+                  <column datatype='string' name='discourse_id' ordinal='0' />
+                  <column datatype='real' name='Ineffective' ordinal='1' />
+                  <column datatype='real' name='Adequate' ordinal='2' />
+                  <column datatype='real' name='Effective' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='submission (tableau) (2)' inline='true' name='federated.123af6m1c96usl146909f1anyts9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau' name='excel-direct.1yhs0oj0leuyue1azqo3g1a4849f'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Oscar/Desktop/Data Science/proyectoDDDD/Predicting-Effective-Arguments-main/Predicting-Effective-Arguments-main/tableau.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1yhs0oj0leuyue1azqo3g1a4849f' name='submission' table='[submission$]' type='table'>
+          <columns gridOrigin='A1:D11:no:A1:D11:0' header='yes' outcome='2'>
+            <column datatype='string' name='discourse_id' ordinal='0' />
+            <column datatype='real' name='Ineffective' ordinal='1' />
+            <column datatype='real' name='Adequate' ordinal='2' />
+            <column datatype='real' name='Effective' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1yhs0oj0leuyue1azqo3g1a4849f' name='submission' table='[submission$]' type='table'>
+          <columns gridOrigin='A1:D11:no:A1:D11:0' header='yes' outcome='2'>
+            <column datatype='string' name='discourse_id' ordinal='0' />
+            <column datatype='real' name='Ineffective' ordinal='1' />
+            <column datatype='real' name='Adequate' ordinal='2' />
+            <column datatype='real' name='Effective' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[submission]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D11:no:A1:D11:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discourse_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[discourse_id]</local-name>
+            <parent-name>[submission]</parent-name>
+            <remote-alias>discourse_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[submission_1D7C8745B4DE4C58BEB0CC39E95FED06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ineffective</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Ineffective]</local-name>
+            <parent-name>[submission]</parent-name>
+            <remote-alias>Ineffective</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[submission_1D7C8745B4DE4C58BEB0CC39E95FED06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adequate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Adequate]</local-name>
+            <parent-name>[submission]</parent-name>
+            <remote-alias>Adequate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[submission_1D7C8745B4DE4C58BEB0CC39E95FED06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effective</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Effective]</local-name>
+            <parent-name>[submission]</parent-name>
+            <remote-alias>Effective</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[submission_1D7C8745B4DE4C58BEB0CC39E95FED06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='submission' datatype='table' name='[__tableau_internal_object_id__].[submission_1D7C8745B4DE4C58BEB0CC39E95FED06]' role='measure' type='quantitative' />
+      <column caption='Discourse Id' datatype='string' name='[discourse_id]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Guatemala&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='submission' id='submission_1D7C8745B4DE4C58BEB0CC39E95FED06'>
+            <properties context=''>
+              <relation connection='excel-direct.1yhs0oj0leuyue1azqo3g1a4849f' name='submission' table='[submission$]' type='table'>
+                <columns gridOrigin='A1:D11:no:A1:D11:0' header='yes' outcome='2'>
+                  <column datatype='string' name='discourse_id' ordinal='0' />
+                  <column datatype='real' name='Ineffective' ordinal='1' />
+                  <column datatype='real' name='Adequate' ordinal='2' />
+                  <column datatype='real' name='Effective' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='submission (tableau)' name='federated.0f5e6e20arcid21h6vby002woyio' />
+            <datasource caption='submission (tableau) (2)' name='federated.123af6m1c96usl146909f1anyts9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0f5e6e20arcid21h6vby002woyio' />
+          <datasource-dependencies datasource='federated.123af6m1c96usl146909f1anyts9'>
+            <column datatype='real' name='[Adequate]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Effective]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Ineffective]' role='measure' type='quantitative' />
+            <column caption='Discourse Id' datatype='string' name='[discourse_id]' role='dimension' type='nominal' />
+            <column-instance column='[discourse_id]' derivation='None' name='[none:discourse_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Adequate]' derivation='Sum' name='[sum:Adequate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Effective]' derivation='Sum' name='[sum:Effective:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ineffective]' derivation='Sum' name='[sum:Ineffective:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0f5e6e20arcid21h6vby002woyio].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0f5e6e20arcid21h6vby002woyio].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.123af6m1c96usl146909f1anyts9].[none:discourse_id:nk]' value='91' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.123af6m1c96usl146909f1anyts9].[sum:Adequate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#a0cbe8' />
+                <format attr='size' value='1.2083977460861206' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.123af6m1c96usl146909f1anyts9].[sum:Effective:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#a0cbe8' />
+                <format attr='size' value='1.2083977460861206' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.123af6m1c96usl146909f1anyts9].[sum:Ineffective:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#a0cbe8' />
+                <format attr='size' value='1.2083977460861206' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.123af6m1c96usl146909f1anyts9].[sum:Effective:qk] + ([federated.123af6m1c96usl146909f1anyts9].[sum:Adequate:qk] + [federated.123af6m1c96usl146909f1anyts9].[sum:Ineffective:qk]))</rows>
+        <cols>[federated.123af6m1c96usl146909f1anyts9].[none:discourse_id:nk]</cols>
+      </table>
+      <simple-id uuid='{418BDFA2-F1F6-4A5A-92F2-D26717CC9DAC}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.123af6m1c96usl146909f1anyts9].[none:discourse_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A7FD899A-46E1-4764-9F1D-AA40DA481AB8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
